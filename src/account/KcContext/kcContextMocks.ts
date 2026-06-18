@@ -173,7 +173,8 @@ export const kcContextMocks: KcContext[] = [
                 type: "totp",
                 period: 30,
                 getAlgorithmKey: () => "SHA1"
-            }
+            },
+            username: "alice@example.com"
         },
         mode: "qr",
         isAppInitiatedAction: false,

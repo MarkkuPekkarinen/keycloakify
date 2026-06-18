@@ -489,6 +489,7 @@ export declare namespace KcContext {
             totpSecretQrCode: string;
             manualUrl: string;
             totpSecret: string;
+            username: string;
             otpCredentials: { id: string; userLabel: string }[];
         };
     };

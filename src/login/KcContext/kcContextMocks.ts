@@ -446,7 +446,8 @@ export const kcContextMocks = [
                 type: "totp",
                 period: 30,
                 getAlgorithmKey: () => "SHA1"
-            }
+            },
+            username: "alice@example.com"
         }
     }),
     id<KcContext.LogoutConfirm>({
