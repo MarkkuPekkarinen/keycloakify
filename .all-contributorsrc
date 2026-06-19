@@ -499,6 +499,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "whawker",
+      "name": "Will Hawker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2003804?v=4",
+      "profile": "https://github.com/whawker",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
