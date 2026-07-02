@@ -1,9 +1,9 @@
-import { clsx } from "keycloakify/tools/clsx";
 import { getKcClsx, type KcClsx } from "keycloakify/login/lib/kcClsx";
 import { useScript } from "keycloakify/login/pages/LoginRecoveryAuthnCodeConfig.useScript";
 import type { PageProps } from "keycloakify/login/pages/PageProps";
-import type { KcContext } from "../KcContext";
+import { clsx } from "keycloakify/tools/clsx";
 import type { I18n } from "../i18n";
+import type { KcContext } from "../KcContext";
 
 export default function LoginRecoveryAuthnCodeConfig(props: PageProps<Extract<KcContext, { pageId: "login-recovery-authn-code-config.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -128,7 +128,7 @@ function LogoutOtherSessions(props: { kcClsx: KcClsx; i18n: I18n }) {
             <div className={kcClsx("kcFormOptionsWrapperClass")}>
                 <div className="checkbox">
                     <label>
-                        <input type="checkbox" id="logout-sessions" name="logout-sessions" value="on" defaultChecked={true} />
+                        <input type="checkbox" id="logout-sessions" name="logout-sessions" value="on" />
                         {msg("logoutOtherSessions")}
                     </label>
                 </div>
